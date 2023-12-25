@@ -5,9 +5,9 @@
 # Thobias Gonçalves Dordete
 <sub>Engenheiro Mecatrônico especializado em ciência de dados</sub>
 
-As a experienced Data Scientist and Air Force pilot I combine analytical skills, ability to work in team environments, and attention to details. Having spend the last years applying Machine Learning to Brazilian Air Force real problems, I developed a critical thinking and problem-solving skills.
+Como cientista de dados, formado na área de exatas, atuo em soluções de problemas reais com o uso da tecnologia e das ferramentas específicas para cada desafio. Tendo atuado principalmente em análises de estabilidade e modelagem geométrica de aeronaves controladas remotamente, adquiri as habilidades necessárias para modelar os problemas a fim de resolvê-los.
 
-My credentials include a Master's in Space Science and Technology from the Aeronautics Institute of Technology (ITA), an institution of higher education and advanced research rated as one of the top and most prestigious engineering schools in Brazil, and a MBA in Project and Process Management from the University of Air Force (UNIFA).
+Graduado em Engenharia Mecatrônica, tenho as capacidades necessárias para entender diversos setores do mundo moderno, abrangendo os segmentos da programação, elétrica e mecânica. Possuo expertise em análises exploratórias, visualização de dados e machine learning, competências estas usadas para resolver desafios complexos e extrair insights valiosos.
 
 **Background in:** Python, Machine Learning, Computer Vision.
 
