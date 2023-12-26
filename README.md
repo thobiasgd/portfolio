@@ -7,7 +7,7 @@
 
 Como cientista de dados, formado na área de exatas, atuo em soluções de problemas reais com o uso da tecnologia e das ferramentas específicas para cada desafio. Tendo atuado principalmente em análises de estabilidade e modelagem geométrica de aeronaves controladas remotamente, adquiri as habilidades necessárias para modelar os problemas a fim de resolvê-los.
 
-Graduado em Engenharia Mecatrônica, tenho as capacidades necessárias para entender diversos setores do mundo moderno, abrangendo os segmentos da programação, elétrica e mecânica. Possuo expertise em análises exploratórias, visualização de dados e machine learning, competências estas usadas para resolver desafios complexos e extrair insights valiosos.
+Graduado em Engenharia Mecatrônica, tenho capacidade para entender diversos setores do mundo moderno, abrangendo os segmentos da programação, elétrica e mecânica. Possuo expertise em análises exploratórias, visualização de dados e machine learning, competências estas usadas para resolver desafios complexos e extrair insights valiosos.
 
 **Background in:** Python, Machine Learning, Computer Vision.
 
