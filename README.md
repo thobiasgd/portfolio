@@ -17,7 +17,7 @@ Graduado em Engenharia Mecatrônica, tenho capacidade para entender diversos set
 ## Projetos:
 Veja os tutoriais publicados do Sigmoidal:
 
-* **Análise dos preços do Airbnb em Roma:** https://bit.ly/3TTCgQz
+* **Análise dos preços do Airbnb em Roma:** 
 
 ---
 
