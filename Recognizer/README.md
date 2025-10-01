@@ -106,11 +106,11 @@ Formato do dataset para o modo ```train```:
 
 ```
 dataset/
-|--- maria/
-|   |--- 1.jpg
-|   |--- 2.jpg
-|--- joao/
-|   |--- rosto.png
+├── maria/
+│   ├── 1.jpg
+│   └── 2.jpg
+├── joao/
+│   └── rosto.png
 ```
 
 Cada subpasta representa uma pessoa diferente.
