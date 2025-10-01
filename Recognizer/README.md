@@ -104,14 +104,15 @@ O reconhecimento é feito usando similaridade de cosseno entre embeddings.
 
 Formato do dataset para o modo ```train```:
 
-'''
+```
 dataset/
 |--- maria/
 |   |--- 1.jpg
 |   |--- 2.jpg
 |--- joao/
 |   |--- rosto.png
-'''
+```
+
 Cada subpasta representa uma pessoa diferente.
 
 ▶️ Exemplos de Execução
