@@ -23,7 +23,7 @@ Utilizar modelos leves e eficientes em formato ONNX, garantindo portabilidade e 
 
 Abaixo, explicamos cada parte do projeto para que você entenda como tudo se conecta.
 
-🔹 **```app.py``` — O cérebro do sistema**
+🔹 ### **```app.py``` — O cérebro do sistema**
 
 Este é o arquivo principal, o ponto de entrada da aplicação. Ele permite que você escolha entre dois modos de operação:
 
@@ -33,19 +33,15 @@ Este é o arquivo principal, o ponto de entrada da aplicação. Ele permite que 
 
 Esse script aceita argumentos via terminal e chama os módulos corretos conforme o modo selecionado.
 
-🔹 config.py — Onde vivem as configurações
+🔹 ### **config.py — Onde vivem as configurações**
 
-Contém parâmetros globais, como:
+Contém **parâmetros globais**, como:
 
-Caminhos para modelos ONNX (models/)
-
-Thresholds de detecção e reconhecimento
-
-Cores para desenhar caixas no vídeo
-
-Caminhos dos vídeos de entrada/saída
-
-Nome dos arquivos de cache (bank_cache.npz) e banco de dados (database.json)
+- Caminhos para modelos ONNX (models/)
+- Thresholds de detecção e reconhecimento
+- Cores para desenhar caixas no vídeo
+- Caminhos dos vídeos de entrada/saída
+- Nome dos arquivos de cache (bank_cache.npz) e banco de dados (database.json)
 
 Isso facilita ajustes sem mexer no código-fonte principal.
 
@@ -161,24 +157,3 @@ Sistemas de presença em salas de aula
 Análise automática de vídeos de segurança
 
 Protótipos de aplicações com visão computacional
-
-🔐 Considerações de Privacidade
-
-O uso de reconhecimento facial deve sempre respeitar a privacidade das pessoas. É essencial garantir:
-
-Consentimento informado
-
-Armazenamento seguro dos dados
-
-Transparência na finalidade do uso
-
-🧾 Licença
-
-Este projeto é open-source sob a licença MIT.
-Sinta-se à vontade para usar, modificar e compartilhar.
-
-👨‍💻 Contribuição
-
-Contribuições são bem-vindas! Se tiver ideias ou melhorias, abra uma issue ou envie um pull request.
-
-+++
