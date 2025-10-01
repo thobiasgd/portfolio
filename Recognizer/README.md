@@ -20,11 +20,11 @@ Utilizar modelos leves e eficientes em formato ONNX, garantindo portabilidade e 
 
 ## **Requisitos**
 
--Python 3.8+
--OpenCV com suporte à FaceDetectorYN (opencv-contrib-python)
--ONNX Runtime
--Tqdm
--NumPy
+- Python 3.8+
+- OpenCV com suporte à FaceDetectorYN (opencv-contrib-python)
+- ONNX Runtime
+- Tqdm
+- NumPy
 
 Instale com:
 ```
