@@ -37,19 +37,19 @@ Esse script aceita argumentos via terminal e chama os módulos corretos conforme
 
 Contém **parâmetros globais**, como:
 
-- Caminhos para modelos ONNX (models/)
+- Caminhos para modelos ONNX (```models/```)
 - Thresholds de detecção e reconhecimento
 - Cores para desenhar caixas no vídeo
 - Caminhos dos vídeos de entrada/saída
-- Nome dos arquivos de cache (bank_cache.npz) e banco de dados (database.json)
+- Nome dos arquivos de cache (```bank_cache.npz```) e banco de dados (```database.json```)
 
 Isso facilita ajustes sem mexer no código-fonte principal.
 
-🔹 databaseEmbeddingGenerator.py — Criando o banco de rostos
+### **```databaseEmbeddingGenerator.py``` — Criando o banco de rostos**
 
 Aqui é onde o treinamento acontece.
 
-Percorre a pasta do dataset (dataset/pessoa/*.jpg).
+Percorre a pasta do dataset (```dataset/pessoa/*.jpg```).
 
 Usa o modelo ONNX de detecção facial para localizar rostos.
 
@@ -57,7 +57,7 @@ Faz o crop da face detectada.
 
 Extrai os embeddings (representações numéricas da face) usando o modelo de reconhecimento.
 
-Salva tudo em um arquivo database.json.
+Salva tudo em um arquivo ```database.json```.
 
 Esse arquivo é depois usado para comparar rostos e identificar pessoas em vídeos.
 
