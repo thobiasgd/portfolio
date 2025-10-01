@@ -33,6 +33,8 @@ Este é o arquivo principal, o ponto de entrada da aplicação. Ele permite que 
 
 Esse script aceita argumentos via terminal e chama os módulos corretos conforme o modo selecionado.
 
+---
+
 ### **```config.py``` — Onde vivem as configurações**
 
 Contém **parâmetros globais**, como:
@@ -44,6 +46,8 @@ Contém **parâmetros globais**, como:
 - Nome dos arquivos de cache (```bank_cache.npz```) e banco de dados (```database.json```)
 
 Isso facilita ajustes sem mexer no código-fonte principal.
+
+---
 
 ### **```databaseEmbeddingGenerator.py``` — Criando o banco de rostos**
 
