@@ -23,13 +23,13 @@ Utilizar modelos leves e eficientes em formato ONNX, garantindo portabilidade e 
 
 Abaixo, explicamos cada parte do projeto para que você entenda como tudo se conecta.
 
-🔹 ```app.py``` — O cérebro do sistema
+🔹 **```app.py``` — O cérebro do sistema**
 
 Este é o arquivo principal, o ponto de entrada da aplicação. Ele permite que você escolha entre dois modos de operação:
 
-```train```: escaneia uma pasta com imagens organizadas por pessoa, detecta os rostos e gera um banco de dados de "embeddings" (vetores que representam a face).
+- ```train```: escaneia uma pasta com imagens organizadas por pessoa, detecta os rostos e gera um banco de dados de "embeddings" (vetores que representam a face).
 
-```infer```: faz a leitura de um vídeo e realiza a identificação dos rostos frame por frame.
+- ```infer```: faz a leitura de um vídeo e realiza a identificação dos rostos frame por frame.
 
 Esse script aceita argumentos via terminal e chama os módulos corretos conforme o modo selecionado.
 
