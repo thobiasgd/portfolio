@@ -1,17 +1,12 @@
-+++markdown
-
-🧠 Reconhecimento Facial com OpenCV e ONNX
-✨ Introdução: O rosto da tecnologia
+# **Reconhecimento Facial com OpenCV e ONNX**
+## Introdução: O rosto da tecnologia
 
 Vivemos em uma era em que a tecnologia está literalmente reconhecendo nossos rostos. Você desbloqueia o celular apenas olhando para ele. Entra no banco, no aeroporto ou até mesmo em salas de aula – e é identificado automaticamente. O reconhecimento facial, antes um conceito de ficção científica, agora é uma realidade presente em diversos setores:
 
-Segurança pública: câmeras que reconhecem foragidos automaticamente.
-
-Empresas: controle de ponto por face.
-
-Acessibilidade: identificação de pessoas para deficientes visuais.
-
-Entretenimento e mídia: filtros e efeitos baseados no seu rosto.
+-Segurança pública: câmeras que reconhecem foragidos automaticamente.
+-Empresas: controle de ponto por face.
+-Acessibilidade: identificação de pessoas para deficientes visuais.
+-Entretenimento e mídia: filtros e efeitos baseados no seu rosto.
 
 Mas como tudo isso acontece? O que há por trás da câmera?
 Este projeto mostra, na prática, como construir um sistema simples e eficaz de reconhecimento facial utilizando OpenCV + ONNX.
