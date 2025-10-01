@@ -94,27 +94,23 @@ O reconhecimento é feito usando similaridade de cosseno entre embeddings.
 
 ## **Como Funciona o Reconhecimento Facial?**
 
-Detecção Facial: primeiro localizamos onde estão os rostos.
+1. Detecção Facial: primeiro localizamos onde estão os rostos.
+2. Alinhamento e Normalização: cortamos a face e preparamos a imagem.
+3. Extração de Embeddings: passamos a imagem por um modelo neural que converte rostos em vetores numéricos.
+4. Comparação: comparamos esses vetores com os do banco de dados.
+5. Classificação: se a similaridade for alta o suficiente, classificamos como uma pessoa conhecida.
 
-Alinhamento e Normalização: cortamos a face e preparamos a imagem.
+## **Dataset Esperado**
 
-Extração de Embeddings: passamos a imagem por um modelo neural que converte rostos em vetores numéricos.
-
-Comparação: comparamos esses vetores com os do banco de dados.
-
-Classificação: se a similaridade for alta o suficiente, classificamos como uma pessoa conhecida.
-
-🧪 Dataset Esperado
-
-Formato do dataset para o modo train:
+Formato do dataset para o modo ```train```:
 
 '''
 dataset/
-├── maria/
-│   ├── 1.jpg
-│   └── 2.jpg
-├── joao/
-│   └── rosto.png
+|--- maria/
+|   |--- 1.jpg
+|   |--- 2.jpg
+|--- joao/
+|   |--- rosto.png
 '''
 Cada subpasta representa uma pessoa diferente.
 
