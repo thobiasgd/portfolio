@@ -33,7 +33,7 @@ Este é o arquivo principal, o ponto de entrada da aplicação. Ele permite que 
 
 Esse script aceita argumentos via terminal e chama os módulos corretos conforme o modo selecionado.
 
-🔹 ### **config.py — Onde vivem as configurações**
+### **config.py — Onde vivem as configurações**
 
 Contém **parâmetros globais**, como:
 
