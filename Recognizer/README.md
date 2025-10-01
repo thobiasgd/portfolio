@@ -53,29 +53,26 @@ Isso facilita ajustes sem mexer no código-fonte principal.
 
 Aqui é onde o treinamento acontece.
 
-Percorre a pasta do dataset (```dataset/pessoa/*.jpg```).
-
-Usa o modelo ONNX de detecção facial para localizar rostos.
-
-Faz o crop da face detectada.
-
-Extrai os embeddings (representações numéricas da face) usando o modelo de reconhecimento.
-
-Salva tudo em um arquivo ```database.json```.
+1. Percorre a pasta do dataset (```dataset/pessoa/*.jpg```).
+2. Usa o modelo ONNX de detecção facial para localizar rostos.
+3. Faz o crop da face detectada.
+4. Extrai os embeddings (representações numéricas da face) usando o modelo de reconhecimento.
+5. Salva tudo em um arquivo ```database.json```.
 
 Esse arquivo é depois usado para comparar rostos e identificar pessoas em vídeos.
 
-🔹 functions.py — Utilitários essenciais
+---
+
+### **```functions.py``` — Utilitários essenciais**
 
 Este módulo contém funções auxiliares, como:
 
-preprocessForModel: redimensiona e normaliza a imagem da face para o modelo.
+- ```preprocessForModel```: redimensiona e normaliza a imagem da face para o modelo.
+- ```l2_normalize```: normaliza vetores para facilitar a comparação.
+- Funções para carregar/salvar o banco de embeddings (```.json``` e ```.npz```).
+- ```get_inference```: prepara os modelos ONNX e retorna as sessões de inferência.
 
-l2_normalize: normaliza vetores para facilitar a comparação.
-
-Funções para carregar/salvar o banco de embeddings (.json e .npz).
-
-get_inference: prepara os modelos ONNX e retorna as sessões de inferência.
+---
 
 🔹 inference.py — Rosto a rosto, frame a frame
 
