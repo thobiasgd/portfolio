@@ -19,6 +19,23 @@ Este projeto mostra, na prática, como construir um sistema simples e eficaz de 
 
 Utilizar modelos leves e eficientes em formato ONNX, garantindo portabilidade e performance.
 
+## **Requisitos**
+
+Python 3.8+
+
+OpenCV com suporte à FaceDetectorYN (opencv-contrib-python)
+
+ONNX Runtime
+
+Tqdm
+
+NumPy
+
+Instale com:
+```
+python -m pip install -r requirements.txt
+```
+
 ## **Estrutura do Projeto**
 
 Abaixo, explicamos cada parte do projeto para que você entenda como tudo se conecta.
@@ -110,33 +127,19 @@ dataset/
 │   ├── 1.jpg
 │   └── 2.jpg
 ├── joao/
-│   └── rosto.png
+│   └── 1.jpg
 ```
 
 Cada subpasta representa uma pessoa diferente.
 
-▶️ Exemplos de Execução
+## **Exemplos de Execução**
+```
 # Etapa 1: Treinar o banco de dados
 python app.py train dataset/
 
 # Etapa 2: Rodar inferência no vídeo
 python app.py infer input.mp4 output.mp4
-
-📦 Requisitos
-
-Python 3.8+
-
-OpenCV com suporte à FaceDetectorYN (opencv-contrib-python)
-
-ONNX Runtime
-
-Tqdm
-
-NumPy
-
-Instale com:
-
-pip install opencv-contrib-python onnxruntime tqdm numpy
+```
 
 💼 Casos de Uso
 
