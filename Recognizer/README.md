@@ -83,11 +83,11 @@ Aqui é onde a mágica acontece: o vídeo é processado e os rostos são reconhe
 1. Carrega o banco de embeddings (.npz ou .json).
 2. Abre o vídeo de entrada.
 3. Para cada frame:
-- Detecta os rostos com YuNet.
-- Extrai embeddings usando o modelo ONNX.
-- Compara com o banco de dados.
-- Identifica a pessoa (ou mostra como "Unknown").
-- Desenha caixas e rótulos no vídeo.
+  - Detecta os rostos com YuNet.
+  - Extrai embeddings usando o modelo ONNX.
+  - Compara com o banco de dados.
+  - Identifica a pessoa (ou mostra como "Unknown").
+  - Desenha caixas e rótulos no vídeo.
 4. Salva o vídeo de saída com as informações sobre os rostos detectados.
 
 O reconhecimento é feito usando similaridade de cosseno entre embeddings.
