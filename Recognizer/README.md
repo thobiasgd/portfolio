@@ -12,8 +12,7 @@ Mas como tudo isso acontece? O que há por trás da câmera?
 Este projeto mostra, na prática, como construir um sistema simples e eficaz de reconhecimento facial utilizando OpenCV + ONNX.
 
 ## **Sobre o Projeto**
-
-- Este projeto foi construído com o objetivo de:
+Este projeto foi construído com o objetivo de:
 - Treinar um banco de dados facial baseado em imagens.
 - Reconhecer pessoas em vídeos, identificando quem é quem.
 
