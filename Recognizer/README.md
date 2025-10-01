@@ -23,7 +23,7 @@ Utilizar modelos leves e eficientes em formato ONNX, garantindo portabilidade e 
 
 Abaixo, explicamos cada parte do projeto para que você entenda como tudo se conecta.
 
-###🔹  **```app.py``` — O cérebro do sistema**
+### **```app.py``` — O cérebro do sistema**
 
 Este é o arquivo principal, o ponto de entrada da aplicação. Ele permite que você escolha entre dois modos de operação:
 
