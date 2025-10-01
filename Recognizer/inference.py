@@ -8,27 +8,53 @@ import numpy as np
 from tqdm import tqdm
 
 class Inferror:
-    def __init__(self, detectorPath: str = "models/face_detection_yunet_2023mar.onnx",
-                  recognitionPath: str = "models/recognition_resnet27.onnx", detectorScoreThreshold: float = 0.65,
-                  recognizerScoreThreshold: float = 0.5):
+    def __init__(self,
+             detectorPath: str = "models/face_detection_yunet_2023mar.onnx",
+             recognitionPath: str = "models/recognition_resnet27.onnx",
+             detectorScoreThreshold: float = 0.6,
+             recognizerScoreThreshold: float = 0.5):
 
+        # save thresholds on the instance
+        self.detectorScoreThreshold = float(detectorScoreThreshold)
+        self.recognizerScoreThreshold = float(recognizerScoreThreshold)
+
+        # create Yunet detector (raise early if model path wrong)
+        if not os.path.isfile(detectorPath):
+            raise FileNotFoundError(f"Detector not found: {detectorPath}")
         self.yunetDetector = cv2.FaceDetectorYN_create(
-                model=detectorPath,
-                config='',
-                input_size=(320, 320),
-                score_threshold=float(detectorScoreThreshold),
-                nms_threshold=0.6,
-                top_k=5000
+            model=detectorPath,
+            config='',
+            input_size=(320, 320),
+            score_threshold=self.detectorScoreThreshold,
+            nms_threshold=0.5,
+            top_k=5000
         )
-    
+
+        # create ONNX session for recognizer (raise on failure)
+        if not os.path.isfile(recognitionPath):
+            raise FileNotFoundError(f"Recognition model not found: {recognitionPath}")
         self.session = ort.InferenceSession(recognitionPath, providers=['CPUExecutionProvider'])
         self.inputName = self.session.get_inputs()[0].name
         self.outputName = self.session.get_outputs()[0].name
         self.inputShape = self.session.get_inputs()[0].shape
+
     
-    def gettingInference(self, videoInput: str, videoOutput: str, NPZ_CACHE: str = "bank_cache.npz", JSON_DB: str = "database.json",
-                 detectorScoreThreshold: float = detectorScoreThreshold, colorRecognized: tuple = (0, 255, 0), colorUnrecognized: tuple = (0, 100, 255), 
-                 recognizerScoreThreshold: float = 0.5, drawConfidence: bool = True):
+    def gettingInference(self,
+                     videoInput: str,
+                     videoOutput: str,
+                     NPZ_CACHE: str = "bank_cache.npz",
+                     JSON_DB: str = "database.json",
+                     detectorScoreThreshold: float | None = None,
+                     colorRecognized: tuple = (0, 255, 0),
+                     colorUnrecognized: tuple = (0, 100, 255),
+                     recognizerScoreThreshold: float | None = None,
+                     drawConfidence: bool = True):
+
+        if detectorScoreThreshold is None:
+            detectorScoreThreshold = self.detectorScoreThreshold
+        if recognizerScoreThreshold is None:
+            recognizerScoreThreshold = self.recognizerScoreThreshold
+
 
         if Path(NPZ_CACHE).exists():
             databaseEmbedding, databaseNames, databaseMeta = loadBankNpz(NPZ_CACHE)
@@ -57,7 +83,6 @@ class Inferror:
         frame_idx = 0
         per_frame_preds = []
         while True:
-            #print("[LOG] Getting Inference ...")
             ret, frame = cap.read()
             if not ret:
                 break

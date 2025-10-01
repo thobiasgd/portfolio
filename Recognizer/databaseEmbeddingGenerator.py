@@ -2,15 +2,15 @@ import os
 from functions import preprocessForModel, l2_normalize, get_inference
 from config import *
 import json
+import sys
 import cv2
+from tqdm import tqdm
 
-print("[LOG] Starting dabase construction ...")
 databaseEntries = [] 
-failedImages = 0
 
 def buildDatabase(datasetPath: str = 'dabaset', detectorPath: str = "models/face_detection_yunet_2023mar.onnx",
                   detectorScoreThreshold: float = 0.6):
-
+    failedImages = 0
     yunetDetector = cv2.FaceDetectorYN_create(
             model=detectorPath,
             config='',
@@ -19,6 +19,9 @@ def buildDatabase(datasetPath: str = 'dabaset', detectorPath: str = "models/face
             nms_threshold=0.5,
             top_k=5000
         )
+    
+    total_images = sum(len(files) for _, _, files in os.walk(datasetPath))
+    pbar = tqdm(total=total_images, desc="Building database", unit="img", disable=not sys.stdout.isatty(), dynamic_ncols=True)
 
     for person in os.listdir(datasetPath):
         pdir = os.path.join(datasetPath, person)
@@ -62,14 +65,15 @@ def buildDatabase(datasetPath: str = 'dabaset', detectorPath: str = "models/face
                     "embedding": emb.tolist()
                 }
                 databaseEntries.append(entry)
+                pbar.update(1)
 
             except Exception:
                 failedImages += 1
+                pbar.update(1)
                 continue
             
     print("[LOG] Database construction finished")
 
-    # salvar em disco
     out_path = "database.json"
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump({"entries": databaseEntries, "failedImages": failedImages}, f, ensure_ascii=False, indent=2)
