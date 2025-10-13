@@ -17,7 +17,7 @@ Graduado em Engenharia Mecatrônica, tenho capacidade para entender diversos set
 ## Projetos:
 Veja os tutoriais publicados do Sigmoidal:
 
-* **Análise dos preços do Airbnb em Roma:**
+[**Análise dos preços do Airbnb em Roma**](https://colab.research.google.com/github/thobiasgd/portfolio/blob/main/analise_airbnb_roma.ipynb)
 
 Machine Vision:
 
