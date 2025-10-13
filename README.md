@@ -15,9 +15,9 @@ Graduado em Engenharia Mecatrônica, tenho capacidade para entender diversos set
 * [LinkedIn](www.linkedin.com/in/thobias-gonçalves-33b19720a)
 
 ## Projetos:
-Veja os tutoriais publicados do Sigmoidal:
+Data Science:
 
-[**Análise dos preços do Airbnb em Roma**](https://colab.research.google.com/github/thobiasgd/portfolio/blob/main/analise_airbnb_roma.ipynb)
+- [**Análise dos preços do Airbnb em Roma**](https://colab.research.google.com/github/thobiasgd/portfolio/blob/main/analise_airbnb_roma.ipynb)
 
 Machine Vision:
 
