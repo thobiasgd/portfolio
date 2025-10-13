@@ -17,7 +17,11 @@ Graduado em Engenharia Mecatrônica, tenho capacidade para entender diversos set
 ## Projetos:
 Veja os tutoriais publicados do Sigmoidal:
 
-* **Análise dos preços do Airbnb em Roma:** 
+* **Análise dos preços do Airbnb em Roma:**
+
+Machine Vision:
+
+- [**Sistema de Detecção e Reconhecimento Facial em Vídeo**](https://github.com/thobiasgd/portfolio/tree/main/Recognizer)
 
 ---
 
