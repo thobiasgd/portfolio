@@ -1,36 +1,36 @@
-# Face Recognition with Dlib and OpenCV
+# Reconhecimento Facial com Dlib e OpenCV
 
-This project implements a face recognition pipeline using **Dlib**, **OpenCV**, and **tqdm** for progress visualization.  
-It processes a video input, detects faces frame by frame, compares them against a local dataset, and exports an annotated video with bounding boxes and facial landmarks.
-
----
-
-## Overview
-
-The script builds a facial descriptor database from images stored in the `./dataset` directory.  
-Each subfolder represents one identity (e.g. `Ross`, `Rachel`, `Monica`, etc.).  
-Then, using Dlib’s `face_recognition_model_v1`, the script processes every frame of a video file, identifies known faces, and marks unknown ones with orange bounding boxes.
-
-Recognized faces are drawn in green and display the predicted label above the detection.  
-All frames are written to a new file called `output.mp4`.
+Este projeto implementa um pipeline completo de **reconhecimento facial** utilizando **Dlib**, **OpenCV** e **tqdm** para exibição de progresso.  
+O script processa um vídeo quadro a quadro, detecta rostos, compara com um banco de dados local e gera um vídeo anotado com caixas delimitadoras e pontos faciais.
 
 ---
 
-## Features
+## Visão Geral
 
-- Face detection using **Dlib’s frontal face detector**
-- Facial landmark extraction with **68-point shape predictor**
-- Facial embeddings generated via **ResNet-based Dlib model**
-- Real-time frame processing with **tqdm** progress bar
-- Automatic labeling of known vs. unknown faces
-- Output video saved with all annotations and landmarks
+O código constrói um banco de descritores faciais a partir das imagens localizadas na pasta `./dataset`.  
+Cada subpasta representa uma identidade (exemplo: `Ross`, `Rachel`, `Monica` etc.).  
+Em seguida, usando o modelo `face_recognition_model_v1` da Dlib, o script processa cada frame de um vídeo, identifica rostos conhecidos e marca os desconhecidos com caixas laranjas.
+
+Rostos reconhecidos são desenhados com caixas verdes e o nome previsto é exibido acima da detecção.  
+Todos os quadros são salvos em um novo arquivo de vídeo chamado **`output.mp4`**.
 
 ---
 
-## Folder Structure
+##  Funcionalidades
+
+- Detecção facial usando **Dlib’s frontal face detector**
+- Extração de pontos faciais com **68 landmarks**
+- Geração de embeddings faciais via **modelo ResNet pré-treinado da Dlib**
+- Exibição de progresso com **tqdm**
+- Identificação automática de rostos conhecidos e desconhecidos
+- Salvamento automático do vídeo com anotações e landmarks
+
+---
+
+##  Estrutura de Pastas
 
 ```
-project/
+projeto/
 │
 ├── dataset/
 │   ├── Ross/
@@ -48,7 +48,7 @@ project/
 
 ---
 
-## Code
+##  Código
 
 ```python
 import numpy as np
@@ -148,31 +148,30 @@ cv2.destroyAllWindows()
 
 ---
 
-## Requirements
+##  Dependências
 
 ```bash
 pip install numpy opencv-python pillow dlib tqdm
 ```
 
-You’ll also need the pretrained models:
+Também é necessário baixar os modelos pré-treinados:
 
 - `shape_predictor_68_face_landmarks.dat`
 - `dlib_face_recognition_resnet_model_v1.dat`
 
-Both are available on the official [Dlib model downloads page](http://dlib.net/files/).
+Disponíveis na página oficial de modelos da [Dlib](http://dlib.net/files/).
 
 ---
 
-## Output Example
+##  Saída
 
-The final video (`output.mp4`) contains:
-- Green boxes for recognized faces  
-- Orange boxes for unknown faces  
-- Green facial landmark points drawn for each detection  
+O vídeo final (`output.mp4`) inclui:
+- Caixas **verdes** para rostos reconhecidos  
+- Caixas **laranjas** para rostos desconhecidos  
+- Pontos faciais desenhados em **verde** sobre cada rosto detectado  
 
 ---
 
-## 🧾 License
+##  Licença
 
-This project is open for study and experimentation.  
-Feel free to use or adapt it for your own computer vision applications.
+Este projeto é aberto para estudo, aprendizado e adaptação em aplicações de visão computacional.
