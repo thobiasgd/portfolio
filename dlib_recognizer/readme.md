@@ -168,7 +168,9 @@ Os modelos podem ser baixados gratuitamente no [link](https://drive.google.com/d
 O vídeo final (`output.mp4`) inclui:
 - Caixas **verdes** para rostos reconhecidos  
 - Caixas **laranjas** para rostos desconhecidos  
-- Pontos faciais desenhados em **verde** sobre cada rosto detectado  
+- Pontos faciais desenhados em **verde** sobre cada rosto detectado
+
+  ![Demonstração do Projeto]([./demo.gif](https://github.com/thobiasgd/portfolio/blob/021610b2538ecd56e98abf07459ce536cb05ca86/dlib_recognizer/output.gif))
 
 ---
 
