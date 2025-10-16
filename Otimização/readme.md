@@ -5,13 +5,13 @@ O projeto foi reestruturado com foco em clareza, desempenho e reprodutibilidade,
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Automatizar a criação, simulação e otimização de asas aeronáuticas, avaliando o desempenho aerodinâmico (CL/CD, distância de decolagem, eficiência geométrica) por meio de um processo evolutivo iterativo.
 
 ---
 
-## 🧩 Estrutura do projeto
+## Estrutura do projeto
 
 ```
 algoritmo_genetico/
@@ -24,7 +24,7 @@ algoritmo_genetico/
 
 ---
 
-## ⚙️ Principais recursos
+## Principais recursos
 
 - **Arquitetura modular:** facilita manutenção e testes.  
 - **Elitismo automático:** o melhor indivíduo é preservado a cada geração.  
@@ -35,7 +35,7 @@ algoritmo_genetico/
 
 ---
 
-## 🧮 Dependências
+## Dependências
 
 - Python ≥ 3.9  
 - OpenVSP (com suporte à API Python)  
@@ -46,7 +46,7 @@ algoritmo_genetico/
 
 ---
 
-## 🚀 Como executar
+## Como executar
 
 1. Ajuste o caminho do OpenVSP no início do projeto, se necessário:
    ```python
@@ -76,7 +76,7 @@ O processo gera:
 
 ---
 
-## 🧠 Estrutura conceitual
+## Estrutura conceitual
 
 1. **Modelagem:** cada indivíduo gera uma geometria de asa com base nos genes (envergadura, corda, sweep, etc.).  
 2. **Simulação:** o OpenVSP executa o `VSPAEROSweep`, gerando o polar aerodinâmico.  
@@ -91,7 +91,7 @@ O arquivo `evolucao.png` mostra a melhoria progressiva do desempenho médio por 
 
 ---
 
-## 🧱 Boas práticas
+## Boas práticas
 
 - Mantenha versões compatíveis do OpenVSP documentadas.  
 - Use ambientes virtuais (`venv` ou `conda`).  
@@ -111,7 +111,7 @@ O arquivo `evolucao.png` mostra a melhoria progressiva do desempenho médio por 
 
 ---
 
-## 📜 Licença
+## Licença
 
 Uso livre para fins acadêmicos e de pesquisa, mediante citação do autor original.
 
