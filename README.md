@@ -21,8 +21,8 @@ Data Science:
 
 Machine Vision:
 
-- [**Sistema de Detecção e Reconhecimento Facial com Onnx e Yunet**](https://github.com/thobiasgd/portfolio/tree/main/Recognizer)
-- [**Sistema de Detecção e Reconhecimento Facial com Dlib**](https://github.com/thobiasgd/portfolio/tree/main/dlib_recognizer)
+- [**Aplicativo de Inferência Facial com Onnx e Yunet**](https://github.com/thobiasgd/portfolio/tree/main/Recognizer)
+- [**Script de Detecção e Reconhecimento Facial com Dlib**](https://github.com/thobiasgd/portfolio/tree/main/dlib_recognizer)
 
 ---
 
