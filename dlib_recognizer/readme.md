@@ -170,7 +170,7 @@ O vídeo final (`output.mp4`) inclui:
 - Caixas **laranjas** para rostos desconhecidos  
 - Pontos faciais desenhados em **verde** sobre cada rosto detectado
 
-  ![Demonstração do Projeto]([./demo.gif](https://github.com/thobiasgd/portfolio/blob/021610b2538ecd56e98abf07459ce536cb05ca86/dlib_recognizer/output.gif))
+  ![Demonstração do Projeto](https://github.com/thobiasgd/portfolio/blob/021610b2538ecd56e98abf07459ce536cb05ca86/dlib_recognizer/output.gif)
 
 ---
 
