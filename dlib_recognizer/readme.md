@@ -8,7 +8,7 @@ O script processa um vídeo quadro a quadro, detecta rostos, compara com um banc
 ## Visão Geral
 
 O código constrói um banco de descritores faciais a partir das imagens localizadas na pasta `./dataset`.  
-Cada subpasta representa uma identidade (exemplo: `Ross`, `Rachel`, `Monica` etc.).  
+Cada subpasta representa uma identidade (exemplo: `Ross`, `Rachel`, `Monica` etc.). O data set usado no projeto pode ser baixado [aqui](https://drive.google.com/drive/folders/17t4kjOZONdatwjX8VJu7bXsBwwfu-M0Y?usp=sharing).
 Em seguida, usando o modelo `face_recognition_model_v1` da Dlib, o script processa cada frame de um vídeo, identifica rostos conhecidos e marca os desconhecidos com caixas laranjas.
 
 Rostos reconhecidos são desenhados com caixas verdes e o nome previsto é exibido acima da detecção.  
@@ -159,7 +159,7 @@ Também é necessário baixar os modelos pré-treinados:
 - `shape_predictor_68_face_landmarks.dat`
 - `dlib_face_recognition_resnet_model_v1.dat`
 
-Disponíveis na página oficial de modelos da [Dlib](http://dlib.net/files/).
+Os modelos podem ser baixados gratuitamente no [link](https://drive.google.com/drive/folders/1FUGihMk2FjKWFSaFSwHLOtbUkYmZB51F?usp=sharing).
 
 ---
 
