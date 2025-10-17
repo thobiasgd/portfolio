@@ -100,10 +100,12 @@ Ele inicializa o `turtlesim_node`, o `turtle_spawner` e o `turtle_controller`, a
 
 ---
 
-## 🏁 Conclusão
+## Conclusão
 
 Esse projeto sintetiza de forma prática os fundamentos do ROS 2: comunicação, modularidade e controle.  
 Ver as tartarugas interagindo em tempo real, com o *controller* tomando decisões a partir de dados publicados por outro nó, é uma demonstração clara do poder do ROS.  
+
+![turtlesim](./turtlesim.mp4)
 
 Próximos passos: explorar **simulações 3D** e integração com **robôs reais**.
 
