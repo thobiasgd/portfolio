@@ -14,6 +14,8 @@ O projeto possui três componentes principais:
 2. **Turtle Controller Node (`turtle_controller_node.cpp`)** — controla a tartaruga principal (`turtle1`), aplicando um controlador proporcional (P) para perseguir e capturar outras tartarugas.
 3. **Launch File (`finalProject.launch.xml`)** — inicializa todos os nós, define parâmetros e organiza a execução do sistema.
 
+![rqt_graph](./catch_them_all.png)
+
 ---
 
 ## 1. Turtle Spawner Node
