@@ -85,7 +85,7 @@ O processo gera:
 
 ---
 
-## 📊 Exemplo de saída (gráfico de convergência)
+## Exemplo de saída (gráfico de convergência)
 
 O arquivo `evolucao.png` mostra a melhoria progressiva do desempenho médio por geração.
 
@@ -101,7 +101,7 @@ O arquivo `evolucao.png` mostra a melhoria progressiva do desempenho médio por 
 
 ---
 
-## 🔬 Próximos passos sugeridos
+## Próximos passos sugeridos
 
 - Implementar fitness multiobjetivo com pesos configuráveis.  
 - Adicionar histórico CSV de cada geração.  
