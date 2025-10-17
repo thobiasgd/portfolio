@@ -1,0 +1,14 @@
+<launch>
+
+    <node pkg="turtlesim" exec="turtlesim_node"/>
+
+    <node pkg="turtlesim_catch_them_all" exec="turtle_spawner">
+        <param name="spawn_time" value="1.5"/>
+    </node>
+
+    <node pkg="turtlesim_catch_them_all" exec="turtle_controller">
+        <param name="linear_velocity" value="1.25"/>
+        <param name="angular_velocity" value="1.8"/>
+    </node>
+
+</launch>
