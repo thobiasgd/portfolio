@@ -12,7 +12,7 @@ Graduado em Engenharia Mecatrônica, tenho capacidade para entender diversos set
 **Background in:** Python, Machine Learning, Computer Vision.
 
 **Links:**
-* [LinkedIn](www.linkedin.com/in/thobias-gonçalves-33b19720a)
+* [LinkedIn](www.linkedin.com/in/thobias-gonçalves-33b19720a](https://www.linkedin.com/in/thobias-gonçalves-33b19720a)
 
 ## Projetos:
 Data Science:
