@@ -3,13 +3,14 @@
 </p>
 
 # Thobias Gonçalves Dordete
-<sub>Engenheiro Mecatrônico especializado em ciência de dados</sub>
 
-Como cientista de dados, formado na área de exatas, atuo em soluções de problemas reais com o uso da tecnologia e das ferramentas específicas para cada desafio. Tendo atuado principalmente em análises de estabilidade e modelagem geométrica de aeronaves controladas remotamente, adquiri as habilidades necessárias para modelar os problemas a fim de resolvê-los.
+<sub>Engenheiro Mecatrônico com foco em Machine Vision</sub>
 
-Graduado em Engenharia Mecatrônica, tenho capacidade para entender diversos setores do mundo moderno, abrangendo os segmentos da programação, elétrica e mecânica. Possuo expertise em análises exploratórias, visualização de dados e machine learning, competências estas usadas para resolver desafios complexos e extrair insights valiosos.
+Atuo no desenvolvimento de sistemas inteligentes voltados à visão computacional, aplicando técnicas de detecção, reconhecimento e análise automatizada de imagens para resolver desafios do mundo real. Tenho experiência com frameworks de aprendizado de máquina e visão computacional, integrando software e hardware em aplicações industriais e de robótica.
 
-**Background in:** Python, Machine Learning, Computer Vision.
+Sou graduado em Engenharia Mecatrônica e atualmente aprofundo meus estudos em robótica, com ênfase em controle, percepção e integração de sensores. Domino Python e C++, linguagens que utilizo no desenvolvimento de soluções de Machine Vision e automação inteligente.
+
+Background in: Python, C++, Machine Vision, Computer Vision, Robotics.
 
 **Links:**
 * [LinkedIn](https://www.linkedin.com/in/thobias-gonçalves-33b19720a)
