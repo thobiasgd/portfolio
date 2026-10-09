@@ -4,13 +4,13 @@
 
 # Thobias Gonçalves Dordete
 
-<sub>Engenheiro Mecatrônico | Machine Vision | Computer Vision | Robótica</sub>
+<sub>Engenheiro Mecatrônico | Desenvolvedor de Software | Computer Vision | Machine Vision | Robótica</sub>
 
-Atuo no desenvolvimento de soluções de **visão computacional aplicadas a problemas reais**, com foco em inspeção, detecção, reconhecimento e análise automatizada de imagens. Minha formação em Engenharia Mecatrônica me permite trabalhar na integração entre software, visão, sensores e sistemas físicos, especialmente em aplicações industriais e de robótica.
+Sou **Engenheiro Mecatrônico e Desenvolvedor de Software**, com foco na criação de soluções que conectam software, visão computacional, automação e sistemas físicos.
 
-Tenho experiência prática com **Python, C++, PyTorch, OpenCV, Machine Vision, Computer Vision e ROS2**, além de desenvolvimento de aplicações para colocar modelos de visão em uso de ponta a ponta — da inferência e avaliação até APIs e interfaces web.
+Atuo com **Computer Vision e Machine Vision**, desenvolvendo aplicações para inspeção, detecção, reconhecimento e análise automatizada de imagens, além da integração dessas soluções com APIs, interfaces web, sensores e sistemas embarcados.
 
-Atualmente sigo aprofundando meus estudos em robótica, percepção, controle e integração de sensores.
+Tenho experiência com **Python, C++, PyTorch, OpenCV e ROS2**, além de tecnologias de desenvolvimento web e backend. Busco aplicar engenharia de software e percepção computacional na construção de sistemas robustos, eficientes e voltados a problemas reais.
 
 ### Principais competências
 
